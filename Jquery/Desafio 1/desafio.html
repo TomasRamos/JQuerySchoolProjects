@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JSQ Desafio</title>
+			<script type="text/javascript" src="jquery-3.3.js"></script>
+			<script type="text/javascript" src="desafio1.js"></script>
+			
+			<style type="text/css">
+				*{
+					
+				}
+				#curso th,td{text-align:center;}
+				.sobre {color:#0000fd;}
+				.borda {background-color:#ff0000;}
+				.destaca{
+						width:200px;
+						border:2px solid #00fdfd;
+						position:absolute;
+				}
+				p{
+					width:200px;
+					margin:135px 180px;
+				}
+				span{
+					background-color:#00ff00;
+					margin:1px;
+					padding:1px;
+					text-align:center;
+					color:#000fff;
+					font-weight:bold;
+					border:2px solid #ffff00;
+					border-top-left-radius:10px 10px;/*(esq,top)*/
+					border-top-right-radius:10px 10px;/*(esq,top)*/
+					border-bottom-right-radius:10px 20px;
+					border-bottom-left-radius:10px 20px;
+					width:30px;
+					height:20px;
+					display:block;
+					float:left;
+				}
+				#fundo{
+					background:url("./fundo.png") 0px 0px;
+					background-repeat:no-repeat;
+					background-attrachment:fixed;
+					margin:10px auto;
+					float:left;
+					width:500px;
+					height:400px;
+				}
+
+			</style>
+			
+    </head>  
+    <body> 
+		<div>
+			<input type="button" value="click" id="click" />
+			<input type="button" value="Ocupar" id="ocup" />
+			<input type="button" value="Libertar" id="lib" />
+			<input type="button" value="atualiza" id="atualiza" />
+			<input type="button" value="mostra" id="mostra" />
+		</div>
+		<div id="fundo">
+			<p>
+				<span>A1</span> 
+				<span>A2</span> 
+				<span>A3</span> 
+				<span>A4</span> 
+				<span>A5</span> 
+			</p>
+			<p>
+				<span>B1</span> 
+				<span>B2</span> 
+				<span>B3</span> 
+				<span>B4</span> 
+				<span>B5</span> 
+			</p>
+			<p>
+				<span>C1</span> 
+				<span>C2</span> 
+				<span>C3</span> 
+				<span>C4</span> 
+				<span>C5</span> 
+			</p>
+			<p>
+				<span>D1</span> 
+				<span>D2</span> 
+				<span>D3</span> 
+				<span>D4</span> 
+				<span>D5</span> 
+			</p>
+			<p>
+				<span>E1</span> 
+				<span>E2</span> 
+				<span>E3</span> 
+				<span>E4</span> 
+				<span>E5</span> 
+			</p>	
+		</div>
+		<div id="lista">
+			<p>
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+			</p>
+			<p>
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+			</p>
+			<p>
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+			</p>
+			<p>
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+			</p>
+			<p>
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+				<span></span> 
+			</p>	
+		</div>
+    </body>  
+</html>  

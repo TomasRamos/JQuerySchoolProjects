@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Desafio - Jquery</title>
+	<link type='text/css' href='stylesheets/style.css' rel='stylesheet'>
+	<script src='javascripts/jquery-3.3.js' type='text/javascript'></script>
+	<script src='javascripts/app_OP.js' type='text/javascript'></script>
+</head>
+<body>
+	<div id="header-container">
+		<div id="header">
+			<span class="logo">Desafio Js & Jquery</logo>
+		</div>
+	</div>
+	<div id="content">	
+	<h2>Carrinho de compras de albuns</h2>
+	<table id="cart">
+		<thead>
+			<tr class="accordion-section">
+				<th colspan="2">
+					Itens para comprar
+				</th>
+				<th>
+					Preço
+				</th>
+				<th>
+					Quantidade
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="item accordion">
+				<td class="image">
+					<img class="cover" src="images/nirvana-nevermind.jpeg">
+				</td>
+				<td class="accordion">
+					<div class="product">
+						<a href="#" class="product-link">Nevermind</a> - 
+						<a href="#" class="author-link">Nirvana</a>
+					</div>
+					<div class="in-stock">Em stock</div>
+				</td>
+				<td class="small"><div class="price">29,90 €</div></td>
+				<td class="small accordion">
+					<input class="quantity" type="number" value="1" size="3" maxlength="3" min="1" max="10" step="1">
+				</td>
+			</tr>
+			<tr class="item accordion">
+				<td class="image">
+					<img class="cover" src="images/Xutos.jpg">
+				</td>
+				<td class="accordion">
+					<div class="product">
+						<a href="#" class="product-link">Xutos & Pontapés </a>
+						<a href="#" class="author-link">o cerco continua</a>
+					</div>
+					<div class="in-stock">Em stock</div>
+				</td>
+				<td class="small"><div class="price">59,90 €</div></td>
+				<td class="small accordion">
+					<input class="quantity" type="number" value="1" size="3" maxlength="3" min="1" max="10" step="1">
+				</td>
+			</tr>
+			<tr class="item accordion">
+				<td class="image">
+					<img class="cover" src="images/metallica.jpg">
+				</td>
+				<td class="accordion">
+					<div class="product">
+						<a href="#" class="product-link">Metallica</a> - 
+						<a href="#" class="author-link">Ride the Lightning</a>
+					</div>
+					<div class="in-stock">Em stock</div>
+				</td>
+				<td class="small"><div class="price">99,90 €</div></td>
+				<td class="small accordion">
+					<input class="quantity" type="number" value="1" size="3" maxlength="3" min="1" max="10" step="1">
+				</td>
+			</tr>
+			<tr class="footer">
+				<td></td>
+				<td>Total da compra</td>
+				<td><div id="total">100,70€</div></td>
+				<td id="calcular">Calcular</td>
+				<td id="novo">Novo</td>
+				<td id="limpar">Reset</td>
+			</tr>
+		</tbody>
+	</table>
+	<span id="ajax">Ajax JQuery</span>
+</div>
+</body>
+</html>

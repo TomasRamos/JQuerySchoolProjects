@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AULA 3 - Jquery</title>
+		<script type="text/javascript"src="js/jquery-3.3.js">
+		</script>
+		<script type="text/javascript"src="js/js3.js">
+		</script>
+	</head>
+	<body>
+		<p id="nome"><span>Nome: Tomás Ramos</span>Fora do span</p>
+		<p>p2</p>
+		<p class="p3"><span>p3</span>Fora do span</p>
+		<p><span>p4</span></p>
+		<p></p>
+		<span>Texto genérico</span>
+		<ul>
+			<li><a href="http://www.epcc.pt">Epcc</a></li>
+			<li><a href="mailto:info@epcc.pt" id="email">Email escola Epcc</a></li>
+			<li><a href="http://www.google.pt" id="google">Google</a></li>
+			<li><a href="./Aula_2/doc.rar">RAR</a></li>
+		</ul>
+	</body>
+</html>
+<!--
+Seletores Simples - usados para aceder ao elemento
+Seletor Universal
+* - todos os elementos recebem este comportamento
+	$(document).ready(function(){
+		$("*").css("color","#0000ff")
+	});
+//----------------------------------------------
+Seletor com classe, neste caso ao atributo classe="p2"
+$(".p2").css("color","#0000ff");
+//-----------------------------------------------
+Seletor elemento tag html
+$("span").css("color","#0000ff");
+//************************************************
+NOTA: A aplicação de regras é sempre pela última declarada.
+//************************************************
+//------------------------------------------------
+Seletor para o grupo
+$(".p2,span").css("color","#0000ff");
+//------------------------------------------------
+Seletores compostos(hierarquia),elementos descendentes(filhos)
+<p id="nome"><span>Nome: Tomás Ramos</span> Fora do span</p>
+Rotina: Selecionar um 'span' que seja filho de um 'p'
+$("p span").css("color","#0000ff");
+Nota: Desta forma  acedemos a um descendente, isto não implica que seja direto.
+//-------------------------------------------------
+DEscendente filho direto, isto é responde diretamente ao elemento pai
+$("p > span").css("border","1px solid #ff0000");
+//-------------------------------------------------
+Descendente irmão, aplicar apenas ao elemento seguinte
+Leitura: p2 tens um irmão a seguir do tipo span?
+$(".p2 + span").css("border","1px solid #ff00ff");
+$("#nome + p").css("border","1px solid #ff0000");
+$("p + span").css("border","1px solid #ff0000");
+Aplicar a todos
+$("#nome ~ p").css("border","1px solid #ff0000");
+//--------------------------------------------------------
+Seletor de ordem(filtros)
+$("*").css("background","#cdcdcd");
+<p id="nome">Nome: Tomás Ramos</p>
+<p>p2</p>
+<p class="p3"><span>p3</span>Fora do span</p>
+<p><span>p4</span></p>
+<span>Texto genérico</span>
+$("p span").css("background","#cdcdcd");
+//------------------------------------------------------
+Filtrara apenas a ocorrencia de um determinado comportamento: apenas o primeiro
+$("p span:first").css("background","#00cdcd");
+//-------------------------------------------------------
+Filtrara apenas a ocorrencia de um determinado comportamento: apenas o último
+$("p span:last").css("background","#00cdcd");
+//-------------------------------------------------------
+Filtrar através da negação, aplicar a regra pela negação do elemento
+$("p span:not(p span:first)").css("background","#cdcd00");
+//-------------------------------------------------------
+Filtrar ocorrência de elementos pares(inicia em 0)
+$("p span:even").css("background","#cd00cd");
+//-------------------------------------------------------
+Filtrar ocorrência de elementos impares(inicia em 0)
+$("p span:odd").css("background","#cd00cd");
+//-------------------------------------------------------
+Filtrar ocorrência de elementos de indíce específico(inicia em 0)
+$("p span:eq(0)").css("background","#cd00cd");
+//--------------------------------------------------------
+Filtrar ocorrência de elementos maior que(inicia em 0)
+$("p span:gt(0)").css("background","#cd00cd");
+//--------------------------------------------------------
+Filtrar ocorrência de elementos menor que(inicia em 0)
+$("p span:lt(0)").css("background","#cd00cd");
+//*********************************************************
+Seletores de conteudo - pesquisar elementos pelo seu conteudo
+//---------------------------------------------------------
+Filtrar todos os elementos que contenham o texto "p1"
+$("p:contains(p2)").css("background","#cd00cd");
+//----------------------------------------------------------
+Filtra elementos que não contenham texto(vazias), muito usado em tabelas.
+$("p:empty").css("background","#cd00cd");
+Todos os elemementos que não estejam vazios
+$("p:not(p:empty)").css("background","#cd00cd");
+//-----------------------------------------------------------
+Filtrar todos os elementos que contenham outros elementos
+$("p:has(span)").css("background","#cdcd00");
+//***********************************************************
+ul>
+	<li><a href="http://www.epcc.pt">Epcc</a></li>
+	<li><a href="mailto:info@epcc.pt" id="email">Email escola Epcc</a></li>
+	<li><a href="http://www.google.pt" id="google">Google</a></li>
+	<li><a href="./Aula_2/doc.rar">RAR</a></li>
+</ul>
+//-------------------------------------------------------------
+Filtrar pelos atributos
+//-------------------------------------------------------------
+Filtrar elementos que tenham um determinado atributo, neste caso será atribuido, neste caso  será atributo id
+$("a[id]").css("background","#cdcd00");
+//--------------------------------------------------------------
+Aplicar um elemento que tenham id com um determinado valor
+$("a[id=email]").css("background","#cdcd00");
+//--------------------------------------------------------------
+Aplicar ao elemento que tenha um id que contem o "m"
+$("a[id*=m]").css("background","#cdcd00");
+//--------------------------------------------------------------
+Aplicar ao elemento que o valor do atributo href termina em "valor"
+$("a[href$=rar]").css("background","#cdcd00");
+//--------------------------------------------------------------
+Aplicar ao elemento que o valor do atributo href inicia em "valor"
+$("a[href^=rar]").css("background","#cdcd00");
+//--------------------------------------------------------------
+Aplicar ao elemento que o valor do atributo id diferente de "google"
+$("a[id!=google]").css("background","#cdcd00");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

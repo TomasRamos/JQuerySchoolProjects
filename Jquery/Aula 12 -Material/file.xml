@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<curso>
+	<formacao>
+		<formando>Sergio Afonso</formando>
+		<formando>Ana Alves</formando>
+		<formando>Maria Rodrigues</formando>
+		<formando>Pedro Pires</formando>
+		<formando>Luis Lopes</formando>
+		<formando>Manuel Pereira</formando>
+		<formando>João Macieira</formando>
+	</formacao>
+	<formacao>
+		<formando>Pedro Afonso</formando>
+		<formando>Raquel Alves</formando>
+		<formando>Anabela Rodrigues</formando>
+		<formando>Tita Pires</formando>
+		<formando>Rita Lopes</formando>
+		<formando>Nadia Pereira</formando>
+		<formando>Joel Macieira</formando>
+	</formacao>
+</curso>

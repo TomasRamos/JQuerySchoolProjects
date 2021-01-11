@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AULA 2 - Jquery</title>
+		<script type="text/javascript"src="js/jquery-3.3.js">
+		</script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("p").css("color","#0000ff").click(function(){
+				$("#nome").css("color","#00ffff").text("Texto alterado via Jquery");
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<p id="nome">Nome: Tomás Ramos</p>
+		<p>p2</p>
+		<p>p3</p>
+		<p>p4</p>
+	</body>
+</html>
+<!--
+Tipos de seletores:
+Selecionar um elemento, com identificador $("#nome")
+Aplicar mais que uma instrução a nossa seleção
+$("#nome").text("Texto alterado via Jquery");
+
+//--------------------------------
+Encadear seletores
+$(document).ready(function(){
+			$("p").css("color","#0000ff").click(function(){
+				$("#nome").css("color","#00ffff").text("Texto alterado via Jquery");
+			});
+		});
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

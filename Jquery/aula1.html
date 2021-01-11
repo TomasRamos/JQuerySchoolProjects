@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>AULA 1 - Jquery</title>
+		<script type="text/javascript"src="js/jquery-3.3.js">
+		</script>
+		<script type="text/javascript">
+		/*window.onload = function(){
+			document.getElementById("nome").onclick = mudarCor;
+			function mudarCor(){
+				document.getElementById("nome").style.color = "#0000ff";
+			}
+		}*/
+		$(document).ready(function(){
+			$("p").click(function(){
+				$("#nome").css("color","#0000ff");
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<p id="nome">Nome: Tomás Ramos</p>
+	</body>
+</html>
+<!--
+Jquery - Biblioteca JS, criada por forma a simplificar a programação em JS.
+Biblioteca, é um arquivo JS escrito e padronizado local ou remotamente.
+//Acesso local através da imporrtação do ficheiro 'jquery-3.3.js'
+<script type="text/javascript">
+	window.onload(){
+		document.getElementById("nome").onclick = mudarCor;
+		function mudarCor(){
+			document.getElementById("nome").style.color = "#0000ff";
+		}
+	}
+</script>
+//----------------------------------------------
+Acesso ao elemento é feito via seletores em jquery
+Sintaxe -> $()
+Em JS puro o total carregamento 
+window.onload(){};
+Em jquery
+$(document).ready(function(){});
+//--------------------------------------------
+$(document).ready(function(){
+	$("p").click(function(){
+		$("#nome").css("color","#0000ff");
+	});
+});
+*************************************************************
+NOTA: EM jquery usamos seletores(css) para aceder aos elementos.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

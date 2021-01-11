@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* reset dos elementos base */
+*{
+	margin:0;
+	padding:0;
+}
+
+/* Garantir que os elementos ocuparão toda a tela*/
+
+body, html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da janela modal*/
+#mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+	background-color: #000;/* preto */
+	display: none;
+}
+#boxes #dialog{
+	position: absolute;
+	display: none;
+	width: 400px;
+	padding: 10px;
+	background-color: #fff;/* branco */
+	z-index: 9999;
+}
+
+.close{
+	display: block;
+	text-align: right;
+}
+
+.arrow{
+	border: 2px solid #f00 !important;
+}
+
+#dialog input, select, fieldset, label{
+	font-family: 'Raleway', sans.serif;
+	font-size: 16px;
+	font-weight: 500;
+	display:block;
+	width: 85%;
+	background: #fff;
+	color: #888;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto 5px auto;
+	border: 2px solid #006;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.obrigatorio{
+	border: 2px solid #f00 !important;
+}
+#dialog input:focus{
+	border: 2px solid #ff00ff;
+}
+
+#dialog fieldset#sexo label{
+	border: 2px solid #09c;
+}
+
+#dialog fieldset#sexo label[for="cFem"]{
+	border: 2px solid #f287b6;
+}
+
+#dialog input[type="submit"]{
+	background: #f77156;
+	color: #fff;
+	width: 40%;
+	padding: 13px;
+	border: none;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#dialog input[type="submit"]:hover{
+	background: #f8ca4d;
+	color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

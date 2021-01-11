@@ -1,0 +1,18 @@
+{
+		"cd": [
+			{
+				"product": "Sergio Burlesque - ",
+				"author": "Bob Dylan",
+				"stock": "1",
+				"price": "11,90",
+				"img": "images/120x120.gif"
+			},
+			{
+				"product": "Empire Burlesque - ",
+				"author": "Bob Sergio",
+				"stock": "1",
+				"price": "10,90",
+				"img": "images/120x120.gif"
+			}
+		]
+}
